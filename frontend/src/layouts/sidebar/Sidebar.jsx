@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../assets/logo/logo6.png'
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+    let currRole = "citizen";//admin
     return (
         <>
  
@@ -33,7 +34,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     {/* Navigation */}
                     <nav className=" mt-5 px-5  ">
                         <ul className="space-y-5">
-                            {navItems.map((item) => (
+                            {navItems.filter(item=>item.role==currRole ||item.role=="common").map((item) => (
+                                
                                 <li key={item.path}>
                                     <NavLink to={item.path}>
                                         {({ isActive }) => (

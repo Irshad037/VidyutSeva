@@ -98,7 +98,7 @@ const Header = ({ parentTitle = "", currTitle = "Create Complaint", toggleSideba
       </div>
 
       <div className="flex items-center gap-1 lg:gap-2 text-[12px] lg:text-sm text-gray-600 ml-1">
-        <span className="flex items-center gap-2 text-lg lg:text-3xl pb-0.5 lg:pb-1.5 text-gray-800">
+        <span className="flex items-center gap-2 text-lg lg:text-3xl pb-0.5 text-gray-800">
           {`>`}
         </span>
         {
@@ -112,7 +112,7 @@ const Header = ({ parentTitle = "", currTitle = "Create Complaint", toggleSideba
                       {item.trim()}
                     </span>
 
-                    <span className="text-[16px] lg:text-2xl pb-0.5 lg:pb-1  text-gray-800">
+                    <span className="text-[16px] lg:text-2xl pb-0.5   text-gray-800">
                       &gt;
                     </span>
 

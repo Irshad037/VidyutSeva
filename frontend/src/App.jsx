@@ -1,34 +1,27 @@
-import React, { useState } from 'react'
-import Sidebar from './layouts/sidebar/Sidebar'
-import Header from './layouts/header/Header'
-import NewComplaint from './pages/citizen/complaint/NewComplaint';
-import AllComplaint from './pages/citizen/complaint/AllComplaint'; 
-import { Route, Routes } from 'react-router-dom';
-import ViewComplaint from './pages/citizen/complaint/ViewComplaint';
-import PayBill from './pages/citizen/bill/PayBill';
-import About from './pages/about/About';
+import React, { useState } from 'react' 
+import { Route, Routes } from 'react-router-dom'; 
+import About from './pages/about/About'; 
+import Admin from './Admin';
+import Citizen from './citizen';
+import Layout from './layouts/Layout';
+import CommonRoutes from './CommonRoutes';
 
 const App = () => {
-   const [isOpen, setIsOpen] = useState (false);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleSidebar = () => {
     setIsOpen(prev => !prev);
   };
   return (
-    <div className='bg-[#fcf6e9] min-h-screen text-foreground'>{/*bg-[#fcf6e9] */}
+    <Routes>
+      {/*admin */}
+      <Route path="/admin/*" element={<Admin />} />
 
+      {/*admin */}
+      <Route path="/citizen/*" element={<Citizen />} />
 
-      <Sidebar   isOpen={isOpen} toggleSidebar={toggleSidebar}  />
-      <div className='flex flex-col md:ml-[210px] lg:ml-[290px]'>
-        <Header />
-        <Routes>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/citizen/complaint' element={<NewComplaint/>}/>
-          <Route path='/citizen/view-complaint' element={<AllComplaint/>}/>
-          <Route path='/citizen/view-complaint/:complaintId' element={<ViewComplaint/>}/>
-          <Route path='/citizen/View-Pay-Bill' element={<PayBill/>}/>
-        </Routes>
-      </div>
-    </div>
+      {/*common */} 
+      <Route path="/*" element={<CommonRoutes />} />
+    </Routes>
   )
 }
 

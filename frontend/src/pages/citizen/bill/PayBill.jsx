@@ -11,6 +11,7 @@ import {
   RotateCcw,
   IndianRupee,
 } from "lucide-react";
+import Layout from "../../../layouts/Layout";
 
 const PayBill = () => {
   const [consumerType, setConsumerType] = useState("LT Consumer");
@@ -58,7 +59,9 @@ const PayBill = () => {
     "w-full rounded-xl border border-[#D8C6E4] bg-[#FCF6E9] px-4 py-3 text-sm text-[#2D103B] outline-none focus:border-[#61197B] focus:ring-2 focus:ring-[#61197B]/10";
 
   return (
-    <div className="min-h-screen bg-[#F7F2E8] px-4 py-5 pb-10 md:px-8 lg:px-10 fontcorm">
+    <Layout currTitle="View/Pay Bill">
+
+      <div className="min-h-screen bg-[#F7F2E8] px-4 py-5 pb-10 md:px-8 lg:px-10 fontcorm">
       {/* Header */}
       <div>
         <p className="text-sm text-[#6B4C7B]">
@@ -279,6 +282,8 @@ const PayBill = () => {
         </section>
       )}
     </div>
+    </Layout>
+    
   );
 };
 
