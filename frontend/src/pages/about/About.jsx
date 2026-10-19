@@ -87,7 +87,7 @@ const About = () => {
 
   return (
     <Layout currTitle="About">
-      <div className="min-h-screen bg-[#F7F2E8] px-4 py-5 pb-12 md:px-7 lg:px-10 fontcorm">
+      <div className="min-h-screen bg-[#FBF7ED] px-4 py-5 pb-12 md:px-7 lg:px-10 fontcorm">
 
         {/* Hero */}
         <section className="relative mt-5 overflow-hidden rounded-3xl bg-[#61197B] px-6 py-10 text-white md:px-10 md:py-14">
@@ -167,7 +167,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-[#E3D4E8] bg-[#FFFEF6] p-6 md:p-8">
+          <div className="rounded-3xl border border-[#D8C6E4] bg-[#FFFEF6] p-6 md:p-8">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#F0E3F5] text-[#61197B]">
               <Zap size={30} />
             </div>
@@ -202,7 +202,7 @@ const About = () => {
 
         {/* Mission and Vision */}
         <section className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2">
-          <div className="rounded-3xl border border-[#E3D4E8] bg-[#FFFEF6] p-6 md:p-8">
+          <div className="rounded-3xl border border-[#D8C6E4] bg-[#FFFEF6]   p-6 md:p-8">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F0E3F5] text-[#61197B]">
               <Target size={25} />
             </div>
@@ -259,7 +259,7 @@ const About = () => {
               return (
                 <div
                   key={feature.title}
-                  className="rounded-2xl border border-[#E3D4E8] bg-[#FFFEF6] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-md"
+                  className="rounded-2xl border border-[#D8C6E4] bg-[#FFFEF6] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F0E3F5] text-[#61197B]">
                     <Icon size={24} />
@@ -279,7 +279,7 @@ const About = () => {
         </section>
 
         {/* How it works */}
-        <section className="mt-14 rounded-3xl border border-[#E3D4E8] bg-[#FFFEF6] p-6 md:p-9">
+        <section className="mt-14 rounded-3xl border border-[#D8C6E4] bg-[#FFFEF6] p-6 md:p-9">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-widest text-[#61197B]">
               Simple workflow
@@ -326,7 +326,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-[#FFFEF6] p-6">
+          <div className="rounded-2xl border border-[#D8C6E4] bg-[#FFFEF6] p-6">
             <HeartHandshake size={27} className="text-[#61197B]" />
             <h3 className="mt-4 text-lg font-bold text-[#2D103B]">
               Accessibility
@@ -384,5 +384,4 @@ const About = () => {
   );
 };
 
-export default About;
-``
+export default About; 

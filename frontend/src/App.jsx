@@ -1,10 +1,10 @@
 import React, { useState } from 'react' 
 import { Route, Routes } from 'react-router-dom'; 
-import About from './pages/about/About'; 
-import Admin from './Admin';
-import Citizen from './citizen';
+import About from './pages/about/About';  
 import Layout from './layouts/Layout';
 import CommonRoutes from './CommonRoutes';
+import CitizenRoutes from './CitizenRoutes'; 
+import AdminRoutes from './AdminRoutes';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +14,10 @@ const App = () => {
   return (
     <Routes>
       {/*admin */}
-      <Route path="/admin/*" element={<Admin />} />
+      <Route path="/admin/*" element={<AdminRoutes />} />
 
       {/*admin */}
-      <Route path="/citizen/*" element={<Citizen />} />
+      <Route path="/citizen/*" element={<CitizenRoutes />} />
 
       {/*common */} 
       <Route path="/*" element={<CommonRoutes />} />
@@ -26,3 +26,5 @@ const App = () => {
 }
 
 export default App
+
+ 

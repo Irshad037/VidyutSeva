@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from './layouts/Layout'
-import { Route, Routes } from 'react-router-dom' 
+import { Route, Routes } from 'react-router-dom'
 import AdminDashboard from './pages/admin/dashboard/AdminDashboard'
 import ComplaintManagement from './pages/admin/complaint/ComplaintManagement'
 
-const Admin = () => {
+const AdminRoutes = () => {
     return (
         <Layout>
             <Routes>
@@ -15,4 +15,4 @@ const Admin = () => {
     )
 }
 
-export default Admin
+export default AdminRoutes  

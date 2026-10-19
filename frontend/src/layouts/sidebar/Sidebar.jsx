@@ -7,7 +7,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     let currRole = "citizen";//admin
     return (
         <>
- 
+
             {isOpen && (
                 <div
                     className="fixed inset-0 bg-black/40 z-30 lg:hidden"
@@ -34,19 +34,13 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     {/* Navigation */}
                     <nav className=" mt-5 px-5  ">
                         <ul className="space-y-5">
-                            {navItems.filter(item=>item.role==currRole ||item.role=="common").map((item) => (
-                                
+                            {navItems.filter(item => item.role == currRole || item.role == "common").map((item) => (
+
                                 <li key={item.path}>
                                     <NavLink to={item.path}>
                                         {({ isActive }) => (
                                             <div
-                                                className={
-                                                    `flex items-center justify-between 
-                                                rounded-2xl
-                                                px-4 py-3
-                                                border-y
-                                                border-transparent
-                                                transition-all duration-300 
+                                                className={`flex items-center justify-between  rounded-2xl  px-4 py-3 border-y  border-transparent transition-all duration-300 
                                                 ${isActive
                                                         ? "bg-[#61197b]  text-white "
                                                         : "hover:bg-[#7b3097]  hover:text-white"
@@ -60,7 +54,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                                                 <div className="flex items-center gap-2">
                                                     <div className={`w-7  h-7 flex items-center justify-center  rounded-lg 
                                                 
-                                                         ${isActive?" bg-[#f3eee1] text-[#61197b] ":" bg-[#61197b] text-white"}`}>
+                                                         ${isActive ? " bg-[#f3eee1] text-[#61197b] " : " bg-[#61197b] text-white"}`}>
                                                         {item.icon}
                                                     </div>
 
@@ -70,7 +64,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                                                     </span>
                                                 </div>
 
-                                                {item.children && ( 
+                                                {item.children && (
                                                     <ChevronDown size={18} />
                                                 )}
                                             </div>

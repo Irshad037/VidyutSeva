@@ -234,7 +234,7 @@ export default function AdminDashboard() {
 
   return (
     <Layout currTitle="Dashboard">
-      <div className="min-h-screen bg-[#FBF7ED] text-[#30163C]">
+      <div className="min-h-screen bg-[#FBF7ED]  text-[#30163C]">
         <main className="mx-auto w-full max-w-[1600px] space-y-7 p-4 sm:p-6 lg:p-9">
           {/* Welcome section */}
           <section className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">

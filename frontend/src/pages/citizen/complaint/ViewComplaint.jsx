@@ -46,7 +46,7 @@ const ViewComplaint = () => {
   return (
     <Layout parentTitle="Complaint > View-complaint" currTitle="ID1">
 
-      <div className="min-h-screen bg-[#FBF7ED] p-4 md:p-7 xl:pr-24 fontcorm">
+      <div className="min-h-screen bg-[#F7F2E8] px-4 py-4 pb-10 md:px-6 lg:px-10 fontcorm">
         {/* Header */}
         <div className="flex items-start justify-between gap-4">
           <div>
@@ -74,7 +74,7 @@ const ViewComplaint = () => {
         {/* Main Content */}
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Complaint Timeline */}
-          <div className="rounded-2xl border border-[#DECBE5] bg-[#FFFCF5] p-6 md:p-9 shadow-sm">
+          <div className="rounded-2xl border border-[#D8C6E4] bg-[#FFFEF6] p-6 md:p-9 shadow-sm">
             {/* Complaint ID */}
             <div className="flex items-start justify-between gap-3">
               <div>
@@ -184,8 +184,8 @@ const ViewComplaint = () => {
             {/* Register Another Complaint */}
             <button
               type="button"
-              onClick={() => navigate("/new-complaint")}
-              className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#DECBE5] px-4 py-3 text-[#29113A] transition hover:bg-[#F4E8F6]"
+              onClick={() => navigate("/citizen/complaint")}
+              className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-xl border border-[#DECBE5] px-4 py-3 text-[#29113A] transition hover:bg-[#F4E8F6]"
             >
               <Plus size={18} />
               Register another complaint
