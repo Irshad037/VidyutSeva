@@ -74,7 +74,7 @@ export const navItems = [
     icon: <FaBook size={14} />,
     label: "Activity Log",
     path: "/admin/activity-log",
-    role: "admin"
+    role: "admin",
   },
   {
     icon: <FaInfo size={13} />,

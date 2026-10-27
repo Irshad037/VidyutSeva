@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../assets/logo/logo6.png'
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
-    let currRole = "citizen";//admin
+    let currRole = "admin";//citizen
     return (
         <>
 
